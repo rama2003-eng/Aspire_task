@@ -1,14 +1,14 @@
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const empName = ["John", "Sandy", "Raj", "Kumar"];
 console.log("-----------Pop function------------");
-console.log(fruits.pop());
-console.log(fruits);
+console.log(empName.pop());
+console.log(empName);
 console.log("\n");
 console.log("-----------Push function------------");
-fruits.push("Pineapple");
-console.log(fruits);
+empName.push("Ram");
+console.log(empName);
 console.log("\n");
 console.log("-----------Array length--------------");
-let len=fruits.length;
+let len=empName.length;
 console.log(len);
 console.log("\n");
 console.log("-----------Map Function---------------");
@@ -54,6 +54,7 @@ function greet() {
     console.log('Hello, world!');
 }
 setTimeout(greet, 2000);
+
 
 
 

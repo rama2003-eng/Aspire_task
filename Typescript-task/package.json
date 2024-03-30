@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "transcript": "^0.0.6"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.30"
-  }
-}
