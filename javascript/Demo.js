@@ -1,3 +1,6 @@
+// title : Built -in functions
+//Author :Ramapraba J
+//Create date:20-03-2024
 const empName = ["John", "Sandy", "Raj", "Kumar"];
 console.log("-----------Pop function------------");
 console.log(empName.pop());
