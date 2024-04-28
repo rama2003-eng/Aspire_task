@@ -1,0 +1,14 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "testnode",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Ramapraba",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
