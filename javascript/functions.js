@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Title : Functions in Javascript
 //Author :Ramapraba J
 //Create date:21-03-2024
@@ -48,3 +49,52 @@ function func(callback) {
   console.log(iterator.next()); 
   console.log(iterator.next()); 
 
+=======
+console.log("-------------Callback Function-------------");
+function func(callback) {
+    console.log("Execute Function");
+      callback();
+   
+  }
+
+  function callbackFunction() {
+    console.log("Callback function executed!");
+  }
+  
+  
+  func(callbackFunction);
+
+  console.log("-------------Anonymous Function-------------");
+  var greet = function() {
+    console.log("Hello, world!");
+  };
+  
+  greet();
+  console.log("-------------Arrow Function-------------");
+  const arrow = () => {
+    console.log("Arrow function");
+  };
+  
+  arrow();
+  console.log("-------------IIFE Function-------------");
+  
+  (function() {
+    console.log("This is an IIFE");
+  })();
+  console.log("-------------Generator Function-------------");
+  
+
+  function* generateSequence() {
+    yield 1;
+    yield 2;
+    yield 3;
+  }
+  
+  const iterator = generateSequence();
+ 
+  console.log(iterator.next()); 
+  console.log(iterator.next()); 
+  console.log(iterator.next()); 
+  console.log(iterator.next()); 
+
+>>>>>>> 4975942f3b08c68e9345c15afcdefa639c9bab11
