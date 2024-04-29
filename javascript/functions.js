@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // Title : Functions in Javascript
 //Author :Ramapraba J
 //Create date:21-03-2024
@@ -97,4 +97,4 @@ function func(callback) {
   console.log(iterator.next()); 
   console.log(iterator.next()); 
 
->>>>>>> 4975942f3b08c68e9345c15afcdefa639c9bab11
+
