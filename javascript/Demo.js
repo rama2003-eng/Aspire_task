@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 // title : Built -in functions
 //Author :Ramapraba J
 //Create date:20-03-2024
-=======
->>>>>>> 4975942f3b08c68e9345c15afcdefa639c9bab11
+
 const empName = ["John", "Sandy", "Raj", "Kumar"];
 console.log("-----------Pop function------------");
 console.log(empName.pop());
