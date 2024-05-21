@@ -1,0 +1,35 @@
+<p>bank works!</p>
+Choose Type of Account:<select [(ngModel)]=" accountInput">
+    <option>SavingsAccount</option>
+    <option>BusinessAccount</option>
+    <option>SalaryAccount</option>
+</select>
+<table>
+    <thead>
+        <tr>
+            <th>Account Number</th>
+            <th>Acconut Holder Name</th>
+            <th>Type of Account</th>
+            <th>Balance</th>
+            <th>Bank Name</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @for (AccountHolder of holders; track AccountHolder) {
+            <tr>
+                @if (AccountHolder.typeOfAccount== accountInput){
+                    @if (AccountHolder.balance>20000){
+                    <td>{{AccountHolder.accountNumber}}</td>
+                    <td>{{AccountHolder.accountHolderName}}</td>
+                    <td>{{AccountHolder.typeOfAccount}}</td>
+                    <td>{{AccountHolder.balance}}</td>
+                    <td>{{AccountHolder.bankName}}</td>
+                    <td>{{ getStatus(AccountHolder.balance) }}</td>
+                }
+                }
+            </tr>
+        }
+    </tbody>
+</table>
