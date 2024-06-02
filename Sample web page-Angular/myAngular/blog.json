@@ -1,0 +1,35 @@
+{
+    "blogdetails": [
+      {
+        "description": "Opening of new offices of the company",
+        "date": "January 14, 2022",
+        "button":"Company",
+        "image": ["https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/interconnected-globe-illustration.jpg?itok=Gl6DtOF_"]
+      },
+      {
+        "description": "What cars are most vulnerable",
+        "date": "March 14, 2022",
+        "button":"Repair",
+        "image": ["https://bobatoo.co.uk/wp-content/uploads/2019/03/keyless-car-entry-system.jpg"]
+      },
+      {
+        "description": "Statistics showed which average age",
+        "date": "March 14, 2022",
+        "button":"Repair",
+        "image": ["https://www.lbhf.gov.uk/sites/default/files/newsarticle/cars-parked-on-street-2000px.jpg"]
+      },
+      {
+        "description": "What´s required when renting a car",
+        "date": "March 14, 2022",
+        "button":"Cars",
+        "image": ["https://www.motoringresearch.com/wp-content/uploads/2016/07/02_Parking.jpg"]
+      },
+      {
+        "description": "New rules for handling our cars",
+        "date": "June 10, 2022",
+        "button":"Company",
+        "image": ["https://p4.wallpaperbetter.com/wallpaper/405/614/520/cityscape-traffic-lights-traffic-signs-wallpaper-preview.jpg"]
+      }
+    ]
+  }
+  

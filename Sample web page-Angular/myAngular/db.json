@@ -1,0 +1,60 @@
+{
+    "cardetails": [
+      {
+        "name": "Toyota RAV4",
+        "year": 2021,
+        "capacity": 4,
+        "fuelType": "Hybrid",
+        "fuelEfficiency": 6.1,
+        "transmission": "Automatic",
+        "monthlyCost": 440,
+        "images": [
+            "https://wallup.net/wp-content/uploads/2017/11/23/533023-Lamborghini-car-car_show-photography-black_cars-luxury_cars.jpg"
+        ]
+      },
+      {
+        "name": "Honda Civic",
+        "year": 2022,
+        "capacity": 5,
+        "fuelType": "Petrol",
+        "fuelEfficiency": 8.2,
+        "transmission": "Manual",
+        "monthlyCost": 350,
+        "images":["https://tse4.mm.bing.net/th?id=OIP.uQIJb1TyA7jlthe248QeFgAAAA&pid=Api&P=0&h=180"]
+      },
+      {
+        "name": "Ford Mustang",
+        "year": 2021,
+        "capacity": 4,
+        "fuelType": "Petrol",
+        "fuelEfficiency": 9.8,
+        "transmission": "Automatic",
+        "monthlyCost": 600,
+        "images":["https://tse1.mm.bing.net/th?id=OIP.SsSgSiDMHy1LhSmF5tqr9AHaEK&pid=Api&P=0&h=180"]
+      },
+      {
+        "name": "Tesla Model S",
+        "year": 2023,
+        "capacity": 5,
+        "fuelType": "Electric",
+        "fuelEfficiency": "N/A",
+        "transmission": "Automatic",
+        "monthlyCost": 800,
+        "images":["https://www.wallpaperflare.com/static/724/231/780/vehicle-sports-car-german-cars-car-wallpaper.jpg"]
+      },
+      {
+        "name": "BMW 3 Series",
+        "year": 2020,
+        "capacity": 5,
+        "fuelType": "Diesel",
+        "fuelEfficiency": 14.5,
+        "transmission": "Automatic",
+        "monthlyCost": 500,
+        "images": ["https://tse2.mm.bing.net/th?id=OIP.ROGZiTFUQGnlHbUBmIOGjwHaEK&pid=Api&P=0&h=180"]
+      }
+    ]
+  }
+  
+    
+  
+  
