@@ -1,0 +1,76 @@
+<section class="container">
+    <h2 class="section-title">Our Blog</h2>
+<div class="blog-container" *ngIf="blogDetails">
+    <div class="blog-grid">
+      <div class="blog-card" *ngFor="let detail of blogDetails">
+        <img [src]="detail.image" alt="Blog image" class="blog-image">
+        <button class="bottom-left-btn">{{detail.button}}</button>
+        <div class="blog-content">
+          <p class="blog-description">{{ detail.description }}</p>
+          <p class="blog-date">{{ detail.date }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>
+<!-- <div class="blog-container" *ngIf="blogDetails">
+    <div class="blog-grid">
+      <div class="blog-card" *ngFor="let detail of blogDetails">
+        <figure class="card-banner">
+          <a href="#">
+            <img [src]="detail.image" alt="Blog image" >
+          </a>
+          <a href="#" class="btn card-badge">Company</a>
+        </figure>
+        <div class="card-content">
+          <h3 class="h3 card-title">
+            <a href="#">{{ detail.description }}</a>
+          </h3>
+          <div class="card-meta">
+            <div class="publish-date">
+           
+              <time [dateTime]="detail.date">{{ detail.date }}</time>
+            </div>
+            <div class="comments">
+             
+              <data value="114">114</data>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  
+
+  <!-- <section class="section blog" id="blog">
+    <div class="container">
+      <h2 class="h2 section-title">Our Blog</h2>
+      <div class="blog-grid">
+        <div class="blog-card" *ngFor="let detail of blogDetails">
+          <figure class="card-banner">
+            <a href="#">
+              <img [src]="detail.image" [alt]="detail.description" loading="lazy" class="w-100">
+            </a>
+            <a href="#" class="btn card-badge">Company</a>
+          </figure>
+          <div class="card-content">
+            <h3 class="h3 card-title">
+              <a href="#">{{ detail.description }}</a>
+            </h3>
+            <div class="card-meta">
+              <div class="publish-date">
+              
+                <time [dateTime]="detail.date">{{ detail.date }}</time>
+              </div>
+              <div class="comments">
+               
+                <data value="114">114</data>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   -->

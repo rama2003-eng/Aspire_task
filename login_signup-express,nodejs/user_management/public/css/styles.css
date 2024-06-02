@@ -1,0 +1,131 @@
+/* General styles for the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Added a background color for contrast */
+}
+
+/* Styles for the form container */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 25px 30px rgba(16, 50, 204, 0.181);
+    width: 400px;
+    text-align: center;
+}
+
+/* Styles for form elements */
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 100;
+    text-align: left; /* Aligns label text to the left */
+    padding-right: 0; /* Removed padding to make it more flexible */
+}
+
+/* Styling the input fields to look like lines */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px 0; /* Top and bottom padding only */
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: none;
+    font-family: 'Poppins', sans-serif; /* Ensures consistent font */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-bottom-color: #007bff; /* Change the bottom border color on focus */
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2865a7;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1f4e7b;
+}
+
+/* Navigation styles */
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="password"],
+.input-container input[type="email"],
+.input-container select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-container label {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    color: #aaa;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.input-container input:focus + label,
+.input-container input:valid + label {
+    bottom: 25px;
+    font-size: 12px;
+    color: #2865a7;
+}
+
+/* Additional styles for select dropdown */
+.input-container select {
+    position: relative;
+    z-index: 1; /* Ensure the select dropdown is above the label */
+}
+
+.input-container select + label {
+    z-index: 0; /* Ensure the label is below the select dropdown */
+    pointer-events: none;
+    bottom: 14px; /* Adjust the position of the label */
+}

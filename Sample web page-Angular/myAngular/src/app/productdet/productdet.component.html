@@ -1,0 +1,119 @@
+<div class="container">
+    <h2 class="section-title">Featured cars</h2>
+<div class="car-grid">
+    <div class="car-details" *ngFor="let detail of carDetails">
+      <div class="car-info">
+        <figure class="card-banner">
+          <img [src]="detail.images" alt="{{ detail.name }}" loading="lazy">
+        </figure>
+        <div class="card-content">
+          <div class="card-title-wrapper">
+            <h3 class="card-title">
+              <p>{{ detail.name }}</p>
+            </h3>
+            <data class="year" value="{{ detail.year }}">{{ detail.year }}</data>
+          </div>
+          <p>Capacity: {{ detail.capacity }}</p>
+          <p>Fuel Type: {{ detail.fuelType }}</p>
+          <p>Fuel Efficiency: {{ detail.fuelEfficiency }} L/100km</p>
+          <p>Transmission: {{ detail.transmission }}</p>
+         <hr style="color:aliceblue">
+          <div class="card-price-wrapper">
+            <p class="card-price">
+              <strong>${{ detail.monthlyCost }}</strong> / month
+            </p>
+
+            <button class="btn">Rent now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+  <!-- <div class="car-grid">
+    <div class="car-details" *ngFor="let detail of carDetails">
+      <div class="car-info">
+        <div class="car-header">
+          <img [src]="detail.image" alt="{{ detail.name }}" class="car-image">
+          <h2>{{ detail.name }}</h2> 
+        </div>
+        <div class="car-details">
+          <div class="detail-item"><strong>Year:</strong> {{ detail.year }}</div>
+          <div class="detail-item"><strong>Capacity:</strong> {{ detail.capacity }}</div>
+          <div class="detail-item"><strong>Fuel Type:</strong> {{ detail.fuelType }}</div>
+          <div class="detail-item"><strong>Fuel Efficiency:</strong> {{ detail.fuelEfficiency }} km/litre</div>
+          <div class="detail-item"><strong>Transmission:</strong> {{ detail.transmission }}</div>
+          <div class="detail-item"><strong>Monthly Cost:</strong> ${{ detail.monthlyCost }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+
+
+
+
+  <!-- 
+    - #FEATURED CAR
+  -->
+  <!-- <div class="car-grid">
+    <div class="car-details" *ngFor="let detail of carDetails">
+      <section class="section featured-car" id="featured-car">
+        <div class="container">
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Featured cars</h2>
+            <a href="#" class="featured-car-link">
+              <span>View more</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <ul class="featured-car-list">
+            <li>
+              <div class="featured-car-card">
+                <figure class="card-banner">
+                  <img [src]="detail.images" alt="{{ detail.name }}" loading="lazy" width="440" height="300" class="w-100">
+                </figure>
+                <div class="card-content">
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">{{ detail.name }}</a>
+                    </h3>
+                    <data class="year" value="{{ detail.year }}">{{ detail.year }}</data>
+                  </div>
+                  <ul class="card-list">
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+                      <span class="card-item-text">Hybrid</span>
+                    </li>
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+                      <span class="card-item-text">{{ detail.fuelEfficiency }} / 1-litre</span>
+                    </li>
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+                      <span class="card-item-text"> {{ detail.transmission }}</span>
+                    </li>
+                  </ul>
+                  <div class="card-price-wrapper">
+                    <p class="card-price">
+                      <strong>{{ detail.monthlyCost }}</strong> / month
+                    </p>
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+                    <button class="btn">Rent now</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+ 
+  
+   -->
