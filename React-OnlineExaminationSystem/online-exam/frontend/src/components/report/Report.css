@@ -1,0 +1,94 @@
+.page-container {
+    display: flex;
+  }
+.report-content {
+    margin-left: 280px;
+    padding: 20px;
+    width: calc(100% - 250px);
+  }
+  
+  .exam-section {
+    margin-bottom: 30px;
+  }
+  
+  .report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .report-table th, .report-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .report-table th {
+    background-color: #287bff;
+  }
+  .footer {
+    background: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .topbar {
+    background: var(--white);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--black2);
+  }
+  
+  .toggle {
+    cursor: pointer;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user .input-control {
+    position: relative;
+  }
+  
+  .user img {
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .user .sign-out-button {
+    padding: 5px 10px;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--white);
+    border: 1px solid var(--black2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: var(--black1);
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background: var(--grey);
+  }
+  

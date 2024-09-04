@@ -1,0 +1,263 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--grey);
+    color: var(--black1);
+    scroll-behavior: smooth; /* Smooth scrolling between sections */
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures the navbar stays on top */
+  }
+  .navbar .login  {
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 15px;
+    background-color: var(--blue);
+  }
+  .navbar .login a {
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 15px;
+    background-color: var(--blue);
+  }
+  
+  .navbar .login a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Styling */
+  section {
+    height: 100vh; /* Full viewport height */
+    padding-top: 60px; /* Offset for fixed navbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Main Section */
+  main {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 20px;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  main h2 {
+    font-size: 2.5em;
+    color: var(--blue);
+    margin-bottom: 20px;
+  }
+  main#home {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 20px;
+    background-image: url('../home.jpeg'); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: var(--white); /* Text color to contrast with the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a subtle text shadow for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+  }
+  
+  main#home h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  /* About Section */
+ /* About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    background-color: var(--grey); /* Optional: Background color */
+    color: var(--black1);
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px; /* Optional: Max width for the content */
+    margin: 0 auto; /* Center align the container */
+  }
+  
+  .about-image {
+    flex: 1; /* Take up 50% of the container */
+    padding-right: 20px; /* Space between image and content */
+  }
+  
+  .about-image img {
+    width: 700px; /* Ensure the image takes up full width */
+    height: 500px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+  }
+  
+  .about-content {
+    flex: 1; /* Take up the other 50% */
+    padding-left: 20px; /* Space between content and image */
+  }
+  
+  .about-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--blue); /* Optional: Text color */
+  }
+  
+  .about-content p {
+    line-height: 1.6;
+    color: var(--black2); /* Optional: Text color */
+  }
+  
+  /* Services Section */
+/* Services Section */
+.services-section {
+    padding: 60px 20px;
+    background-color: var(--white); /* Optional: Background color */
+    color: var(--black1);
+  }
+  
+  .services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: var(--blue); /* Optional: Text color */
+    text-align: left; /* Align the heading to the left */
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-between; /* Space between the cards */
+    gap: 20px; /* Space between the cards */
+    flex-wrap: wrap; /* Wrap cards to the next line if they don't fit */
+  }
+  
+  .service-card {
+    background-color: var(--grey); /* Background color for the cards */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: calc(33.333% - 20px); /* Responsive width for three cards in a row */
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .service-card img {
+    width: 100%; /* Make the image take up full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    margin-bottom: 15px; /* Space between image and text */
+  }
+  
+  .service-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: var(--blue); /* Optional: Text color */
+  }
+  
+  .service-card p {
+    line-height: 1.6;
+    color: var(--black2); /* Optional: Text color */
+  }
+  
+  
+  
+  /* Contact Section */
+  #contact {
+    background-color: var(--grey);
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+  }
+  
+  .contact-info .info p {
+    margin-bottom: 15px;
+  }
+  
+  .feedback {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .feedback h3 {
+    margin-bottom: 15px;
+  }
+  
+  .feedback form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .feedback form input[type="text"],
+  .feedback form input[type="email"],
+  .feedback form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--black2);
+    border-radius: 5px;
+  }
+  
+  .feedback form input[type="submit"] {
+    padding: 10px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .feedback form input[type="submit"]:hover {
+    background-color: darken(var(--blue), 10%);
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  

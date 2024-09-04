@@ -1,0 +1,82 @@
+.result-page {
+  margin: 20px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side {
+  width: 60%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-side {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-card {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-card p {
+  margin: 5px 0;
+}
+
+.score-card {
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.score-card .card-content {
+  font-size: 32px; /* Increase font size */
+  font-weight: bold;
+}
+
+.percentage-card {
+  background-color: #ff69b4; /* Pink color */
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.percentage-card .card-content {
+  font-size: 32px; /* Increase font size */
+  font-weight: bold;
+}
+
+.back-home-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color:  #007bff; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+

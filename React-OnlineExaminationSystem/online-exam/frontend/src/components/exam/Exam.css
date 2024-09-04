@@ -1,0 +1,132 @@
+/* Reset body margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scroll on body */
+  }
+  
+  /* Container styling for ManageExam component */
+  .container {
+    display: flex; 
+    height: 100vh; 
+    width: 1550px; 
+  }
+  
+ 
+  
+  /* Main content styling */
+  .main-content {
+    flex: 1; /* Take up the remaining space */
+    padding: 20px; /* Padding inside main content */
+    /* background-color: #f8f9fa; */
+    margin-left: 220px; 
+   
+  }
+  
+  /* Exam container styling */
+  .exam-container {
+    max-width: 100%; /* Full width */
+    margin: 0; /* Remove default margin */
+    padding: 20px;
+    background-color: #fff; /* White background for exam container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  
+  /* Header styling */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .add-exam-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .add-exam-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Table container styling */
+  .table-container {
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure rounded corners are visible */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover td {
+    background-color: #e9ecef;
+  }
+  
+  button {
+    padding: 8px 12px;
+    background-color: #287bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #1e5bb5;
+  }
+  
+  .update-button {
+    background-color: #28a745; /* Green for update */
+  }
+  
+  .update-button:hover {
+    background-color: #218838;
+  }
+  
+  .delete-button {
+    background-color: #dc3545; /* Red for delete */
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  .footer {
+    background: var(--blue);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }

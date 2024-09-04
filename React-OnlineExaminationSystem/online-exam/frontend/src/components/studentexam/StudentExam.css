@@ -1,0 +1,77 @@
+.student-exam {
+  display: flex;
+  flex-direction: column;
+
+  margin: 20px;
+  padding-left: 350px;
+}
+.student-exam  h2{
+  padding-left: 300px;
+}
+
+.option-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; 
+  margin: 10px 0;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.exam-time-limit, .timer {
+  margin-bottom: 10px;
+}
+
+
+.exam-time-limit, .timer {
+  margin-bottom: 10px;
+}
+
+
+.reset-btn {
+  background-color: #dc3545;
+}
+
+.reset-btn:disabled {
+  background-color: #f5a9a9;
+  cursor: not-allowed;
+}
+
+.submit-btn {
+  background-color: #007bff;
+}
+
+
+.question-card {
+  position: relative; 
+  width: 1500px;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.reset-btn {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-btn:disabled {
+  background-color: #f5a9a9;
+  cursor: not-allowed;
+} 
