@@ -1,0 +1,89 @@
+<!-- <div class="cart-container">
+  <h2>Your Shopping Cart</h2>
+  <div *ngIf="items.length > 0; else emptyCart" class="cart-content">
+  
+    <div class="cart-item" *ngFor="let item of items">
+      
+      <div class="column">
+        <img [src]="item.image" alt="Product Image">
+      </div>
+    
+      <div class="column">
+        <p>{{ item.category }}</p>
+      </div>
+    
+      <div class="column quantity">
+        <button (click)="decreaseQuantity(item)">-</button>
+        <span>{{ item.quantity }}</span>
+        <button (click)="increaseQuantity(item)">+</button>
+      </div>
+    
+      <div class="column">
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.price | currency: 'INR' }}</p>
+        <button (click)="removeFromCart(item.id)" class="remove">Remove</button>
+      </div>
+    </div>
+  
+    <div class="cart-summary">
+      <div class="total-price">
+        <h3>Total Price: {{ totalPrice | currency:'INR' }}</h3>
+      </div>
+      <div class="checkout-btn">
+        <button (click)="proceedToCheckout()">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+  <ng-template #emptyCart>
+    <div class="empty-cart">
+      <img src="https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-4150967-3437888.png" alt="Empty Cart Image">
+      <p>Your shopping cart is empty.</p>
+    </div>
+  </ng-template>
+</div> -->
+<div class="cart-container">
+  <h2>Your Shopping Cart</h2>
+  <div *ngIf="items.length > 0; else emptyCart" class="cart-content">
+    <!-- Cart items -->
+    <div class="cart-item" *ngFor="let item of items">
+      <!-- Left side: Product image and details -->
+      <div class="left-column">
+        <img [src]="item.image" alt="Product Image">
+        <div class="product-details">
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+      <!-- Right side: Quantity, Price, and Remove button -->
+      <div class="right-column">
+        <div class="quantity">
+          <button (click)="decreaseQuantity(item)">-</button>
+          <span>{{ item.quantity }}</span>
+          <button (click)="increaseQuantity(item)">+</button>
+        </div>
+        <div class="price">
+          <p>{{ item.price | currency: 'INR' }}</p>
+        </div>
+        <button (click)="removeFromCart(item.id)" class="remove">
+          <img src="https://cdn-icons-png.flaticon.com/128/9221/9221441.png" alt="Delete Icon">
+        </button>
+      </div>
+    </div>
+    <!-- Total price and checkout button -->
+    <div class="cart-summary">
+      <div class="total-price">
+        <h3>Total Price: {{ totalPrice | currency:'INR' }}</h3>
+      </div>
+      <div class="checkout-btn">
+        <button (click)="proceedToCheckout()">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+  <ng-template #emptyCart>
+    <div class="empty-cart">
+      <img src="https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-4150967-3437888.png" alt="Empty Cart Image">
+      <p>Your shopping cart is empty.</p>
+    </div>
+  </ng-template>
+</div>
+

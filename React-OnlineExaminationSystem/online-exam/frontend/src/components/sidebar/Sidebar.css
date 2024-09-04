@@ -1,0 +1,97 @@
+:root {
+  --blue: #287bff;
+  --white: #fff;
+  --grey: #f5f5f5;
+  --black1: #222;
+  --black2: #999;
+}
+ /* Sidebar styling */
+ .sidebar {
+  width: 280px; /* Adjust width as needed */
+  background-color:  #007bff; /* Dark background for sidebar */
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+  height: 100vh; /* Full height */
+  position: fixed; /* Fix position to prevent scrolling issues */
+  left: 0; /* Align to left */
+  top: 0; /* Align to top */
+}
+#header{
+  background-color:  #007bff;
+}
+.sidebar header {
+  padding: 20px;
+  background-color:  #007bff;
+}
+.sidebar header .lo {
+
+  background-color:  #007bff;
+}
+.sidebar header .lo ion-icon{
+
+  background-color:  #007bff;
+}
+.sidebar nav {
+  flex-grow: 1; /* Take up remaining space */
+  margin-top: 20px;
+  background-color: #287bff;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  background-color:  #007bff;
+ 
+}
+
+.sidebar ul li {
+  padding: 15px;
+  background-color:  #007bff;
+}
+
+.sidebar ul li span{
+
+  background-color:  #007bff;
+}
+
+.sidebar ul li a {
+  color: var(--white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  
+  background-color:  #007bff;
+}
+
+.sidebar ul li .home-link .title{
+  color: var(--white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  
+  background-color:  #007bff;
+}
+
+.sidebar ul li a ion-icon {
+  font-size: 1.5em;
+  margin-right: 10px;
+  background-color:  #007bff;
+}
+
+.sidebar-footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
+  width: 100%; /* Full width of the sidebar */
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #e9ecef;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+  background-color: #287bff;
+}

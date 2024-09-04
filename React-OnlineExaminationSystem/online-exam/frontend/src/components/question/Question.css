@@ -1,0 +1,84 @@
+.question-container {
+    display: flex;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between question cards */
+  }
+  
+  .question-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .question-text,
+  .question-options,
+  .question-answer {
+    margin-bottom: 10px;
+  }
+  
+  .question-options div {
+    margin-bottom: 5px; /* Space between options */
+  }
+  
+  .question-actions {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+.question-index {
+    margin-right: 10px; /* Space between index and question text */
+    font-weight: bold;
+    color: #333;
+  }
+  .action-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .add-question-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width:20%;
+  }
+  .update-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  

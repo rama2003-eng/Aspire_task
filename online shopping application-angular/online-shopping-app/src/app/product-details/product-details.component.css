@@ -1,0 +1,178 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Container for product details */
+.product-details-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align items to the top */
+  padding: 20px;
+  gap: 20px; /* Add space between left and right sides */
+  max-width: 1200px;
+  margin: 20px auto; /* Center vertically */
+}
+
+.product-details-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #4c84c1;
+}
+
+/* Left side - Product image */
+.product-details-container .product-image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-details-container .product-image img {
+  width: 100%; /* Adjust the width as needed */
+  max-width: 100%; /* Limit the max width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Add to Cart button */
+.product-details-container button {
+  padding: 12px 20px; /* Larger padding for better touch/click area */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 200px; /* Limit maximum button width */
+  text-align: center; /* Center text within button */
+}
+
+.product-details-container button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Right side - Product details */
+.product-details-container .product-details-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container 1: Basic Product Details */
+.product-details-container .product-basic-details {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.product-details-container .product-basic-details .rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-details-container .product-basic-details .rating .fa {
+  color: #ffcc00; /* Yellow color for stars */
+  margin-right: 5px;
+}
+
+.product-details-container .product-basic-details .price {
+  font-size: 20px;
+  font-weight: bold; /* Make price stand out */
+  margin-bottom: 10px;
+  color: #007bff; /* Adjust color as needed */
+}
+
+/* Container 2: Size Selection */
+.product-details-container .size-selection {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+ 
+}
+
+.product-details-container .size-selection h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-details-container .size-options {
+  display: flex;
+}
+
+.product-details-container .size-option {
+  cursor: pointer; /* Ensure cursor changes to pointer on hover */
+  padding: 5px 10px; /* Add padding for clickable area */
+  margin-right: 10px; /* Add spacing between options */
+  display: inline-block; /* Ensure they display in a row */
+  border: 1px solid #ccc; /* Add border for visual distinction */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #f0f0f0; /* Background color */
+}
+
+.product-details-container .size-option.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Container 3: Product Reviews */
+.product-details-container .product-reviews {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.product-details-container .product-reviews h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-details-container .review {
+  margin-bottom: 10px;
+}
+
+.product-details-container .review .review-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.product-details-container .review .review-info span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.product-details-container .review .fa {
+  color: #ffcc00; /* Yellow color for stars */
+  margin-right: 2px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .product-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-details-container .product-image {
+    align-items: center;
+  }
+
+  .product-details-container .product-image img {
+    max-width: 100%;
+  }
+}

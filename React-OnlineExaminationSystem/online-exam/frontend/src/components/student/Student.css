@@ -1,0 +1,51 @@
+.students-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+
+  
+  .students-table-container {
+    flex: 1;
+    padding: 20px;
+    padding-left:350px;
+  }
+  
+  .students-table-container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .students-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .students-table th,
+  .students-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .students-table th {
+    background-color:#007bff;;
+  }
+  
+  .students-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .delete-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  

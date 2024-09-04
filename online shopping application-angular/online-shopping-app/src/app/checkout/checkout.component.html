@@ -1,0 +1,342 @@
+<!-- <div class="checkout-container">
+  <h2>Contact Details</h2>
+  <div class="checkout-content">
+   
+    <form class="checkout-form">
+      <div class="section-header">
+        <img src="https://cdn-icons-png.flaticon.com/128/4083/4083802.png" alt="Contact Logo" class="section-logo" />
+        <h2>Contact Details</h2>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <input
+            type="text"
+            id="name"
+            [(ngModel)]="name"
+            name="name"
+            placeholder=" "
+            required
+          />
+          <label for="name">Name</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="phone"
+            [(ngModel)]="phone"
+            name="phone"
+            placeholder=" "
+            required
+          />
+          <label for="phone">Contact Number</label>
+        </div>
+      </div>
+      <div class="section-header">
+        <img src="https://cdn-icons-png.flaticon.com/128/9800/9800512.png" alt="Address Logo" class="section-logo" />
+        <h2>Address</h2>
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          id="house"
+          [(ngModel)]="house"
+          name="house"
+          placeholder=" "
+        />
+        <label for="house">House no./Building name</label>
+      </div>
+     
+      <div class="form-group">
+        <input
+          type="text"
+          id="road"
+          [(ngModel)]="road"
+          name="road"
+          placeholder=" "
+        />
+        <label for="road">Road name/Area/Colony</label>
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          id="pincode"
+          [(ngModel)]="pincode"
+          name="pincode"
+          placeholder=" "
+          required
+        />
+        <label for="pincode">Pincode</label>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <input
+            type="text"
+            id="city"
+            [(ngModel)]="city"
+            name="city"
+            placeholder=" "
+            required
+          />
+          <label for="city">City</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="state"
+            [(ngModel)]="state"
+            name="state"
+            placeholder=" "
+            required
+          />
+          <label for="state">State</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          id="landmark"
+          [(ngModel)]="landmark"
+          name="landmark"
+          placeholder=" "
+        />
+        <label for="landmark">Nearby Famous Place/Shop/School, etc. (optional)</label>
+      </div>
+    </form>
+
+    
+    <div class="order-summary">
+      <h3>Order Summary</h3>
+      <div *ngFor="let item of items" class="order-item">
+        <div class="order-item-left">
+          <img [src]="item.image" alt="{{ item.description }}" class="order-item-image" />
+        </div>
+        <div class="order-item-right">
+          <div class="order-item-details">
+            <p>{{ item.description }}</p>
+          </div>
+          <div class="order-item-price">
+            <p>{{ item.price | currency:'INR' }}</p>
+          </div>
+          <div class="order-item-quantity-size">
+            <p>Quantity: {{ item.quantity }}</p>
+            <p>Size: {{ item.size }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="order-summary-details">
+        <div class="summary-line total">
+          <span>Total:</span>
+          <span>{{ totalPrice | currency:'INR' }}</span>
+        </div>
+        <button (click)="placeOrder()" class="button">Continue</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="checkout-container">
+  <h2>Checkout</h2>
+  <div class="checkout-content">
+    <!-- Checkout Form -->
+    <form class="checkout-form" *ngIf="!showPaymentComponent && !orderPlaced">
+      <div class="section-header">
+        <img src="https://cdn-icons-png.flaticon.com/128/4083/4083802.png" alt="Contact Logo" class="section-logo" />
+        <h2>Contact Details</h2>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <input
+            type="text"
+            id="name"
+            [(ngModel)]="name"
+            name="name"
+            placeholder=" "
+            required
+          />
+          <label for="name">Name</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="phone"
+            [(ngModel)]="phone"
+            name="phone"
+            placeholder=" "
+            required
+          />
+          <label for="phone">Contact Number</label>
+        </div>
+      </div>
+      <div class="section-header">
+        <img src="https://cdn-icons-png.flaticon.com/128/9800/9800512.png" alt="Address Logo" class="section-logo" />
+        <h2>Address</h2>
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          id="house"
+          [(ngModel)]="house"
+          name="house"
+          placeholder=" "
+        />
+        <label for="house">House no./Building name</label>
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          id="road"
+          [(ngModel)]="road"
+          name="road"
+          placeholder=" "
+        />
+        <label for="road">Road name/Area/Colony</label>
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          id="pincode"
+          [(ngModel)]="pincode"
+          name="pincode"
+          placeholder=" "
+          required
+        />
+        <label for="pincode">Pincode</label>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <input
+            type="text"
+            id="city"
+            [(ngModel)]="city"
+            name="city"
+            placeholder=" "
+            required
+          />
+          <label for="city">City</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="state"
+            [(ngModel)]="state"
+            name="state"
+            placeholder=" "
+            required
+          />
+          <label for="state">State</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <input
+          type="text"
+          id="landmark"
+          [(ngModel)]="landmark"
+          name="landmark"
+          placeholder=" "
+        />
+        <label for="landmark">Nearby Famous Place/Shop/School, etc. (optional)</label>
+      </div>
+      <button (click)="saveAddressAndContinue()" class="button">Save Address and Continue</button>
+    </form>
+
+    <!-- Order Summary -->
+    <div class="order-summary" *ngIf="!showPaymentComponent && !orderPlaced">
+      <div *ngFor="let item of items" class="order-item">
+        <div class="order-item-left">
+          <img [src]="item.image" alt="{{ item.description }}" class="order-item-image" />
+        </div>
+        <div class="order-item-right">
+          <div class="order-item-details">
+            <p>{{ item.description }}</p>
+          </div>
+          <div class="order-item-price">
+            <p>{{ item.price | currency:'INR' }}</p>
+          </div>
+          <div class="order-item-quantity-size">
+            <p>Quantity: {{ item.quantity }}</p>
+            <p>Size: {{ item.size }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="order-summary-details">
+        <div class="summary-line total">
+          <span>Total:</span>
+          <span>{{ totalPrice | currency:'INR' }}</span>
+        </div>
+        <button (click)="showPaymentComponent = true" class="button">Continue</button>
+      </div>
+    </div>
+
+    <!-- Payment Component -->
+    <div class="payment-component" *ngIf="showPaymentComponent && !orderPlaced">
+      <div class="payment-container">
+        <div class="payment-methods">
+          <div class="payment-method">
+            <label style="font-size: 1.15em;">
+              <input type="radio" name="payment" [(ngModel)]="selectedPaymentMethod" value="online" />
+              <img src="https://cdn-icons-png.flaticon.com/128/4108/4108042.png" alt="Online Payment" />
+              UPI
+            </label>
+          </div>
+          <div class="payment-method">
+            <label style="font-size: 1.15em;">
+              <input type="radio" name="payment" [(ngModel)]="selectedPaymentMethod" value="wallet" />
+              <img src="https://cdn-icons-png.flaticon.com/128/1041/1041888.png" alt="Wallet Payment" />
+              Wallet
+            </label>
+          </div>
+          <div class="payment-method">
+            <label style="font-size: 1.15em;">
+              <input type="radio" name="payment" [(ngModel)]="selectedPaymentMethod" value="card" />
+              <img src="https://cdn-icons-png.flaticon.com/128/1086/1086741.png" alt="Card Payment" />
+              Debit/Credit Cards
+            </label>
+          </div>
+          <div class="payment-method">
+            <label style="font-size: 1.15em;">
+              <input type="radio" name="payment" [(ngModel)]="selectedPaymentMethod" value="netbanking" />
+              <img src="https://cdn-icons-png.flaticon.com/128/4519/4519107.png" alt="Net Banking Payment" />
+              Net Banking
+            </label>
+          </div>
+          <div class="payment-method">
+            <label style="font-size: 1.15em;">
+              <input type="radio" name="payment" [(ngModel)]="selectedPaymentMethod" value="cod" />
+              <img src="https://cdn-icons-png.flaticon.com/128/7875/7875821.png" alt="Cash on Delivery Payment" />
+              Cash on Delivery
+            </label>
+          </div>
+        </div>
+        <div class="vertical-divider"></div>
+        <div class="order-summary-container">
+          <div class="order-summary-details">
+            <div class="summary-line">
+              <span>Number of Items:</span>
+              <span>{{ items.length }}</span>
+            </div>
+            <div class="summary-line">
+              <span>Total Price:</span>
+              <span>{{ totalPrice | currency:'INR' }}</span>
+            </div>
+          </div>
+          <div class="button-container">
+            <button (click)="placeOrder()" class="button">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order Confirmation Message -->
+   <!-- Order Confirmation Message -->
+<div *ngIf="orderPlaced" class="order-confirmation">
+  <div class="confirmation-content">
+    <img src="https://cdn-icons-png.flaticon.com/128/190/190411.png" alt="Success" class="success-icon" />
+    <h3>Order Placed Successfully!</h3>
+    <img src="https://img.freepik.com/free-vector/delivery-boy-picks-up-parcel-from-online-store-sending-customer-with-location-application-by-motorcycle-vector-illustration_1150-56229.jpg?ga=GA1.1.87438823.1711523060&semt=ais_hybrid" 
+    alt="Contact Logo" class="order-logo" />
+    <p>Thank you for your purchase.</p>
+    <p>Your order is on its way.</p>
+  </div>
+</div>
+
+  </div>
+</div>
