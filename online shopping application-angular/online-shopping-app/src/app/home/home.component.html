@@ -1,0 +1,151 @@
+<!-- <p>home works!</p>
+<div class="home-container">
+    <div class="welcome-message">
+      <h1>Welcome to Our Online Shop!</h1>
+      <p>Find the best products at the best prices.</p>
+    </div>
+    <div class="featured-products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div *ngFor="let product of featuredProducts" class="product-card">
+          <img [src]="product.image" alt="{{ product.name }}" class="product-image">
+          <div class="product-info">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.price | currency }}</p>
+            <p>{{ product.category }}</p>
+            <a [routerLink]="['/product-details', product.id]" class="details-link">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
+
+   <div class="container">
+    <div class="left-content">
+      <h1>GET START YOUR<br> FAVORITE SHOPPING</h1>
+      <p>Enjoy your shopping  with us</p>
+      <a [routerLink]= "['/login']"class="details-link">login</a>
+    </div>
+    <div class="right-content">
+      <img src="https://img.freepik.com/premium-vector/online-e-commerce-make-customers-quickly-buy-product_1134986-5542.jpg?w=740" 
+      alt="A descriptive alt text">
+    </div>
+  </div>
+  <h1 style="text-align: center;">Why us</h1>
+  <div class="featured-section">
+    <div class="container">
+      <div class="featured-item">
+        <div class="featured-icon">
+          <img src="https://cdn-icons-png.freepik.com/512/411/411763.png" alt="Instant Delivery">
+        </div>
+        <div class="featured-text">
+          <h4>Instant Delivery</h4>
+          <p>One day shipping on all orders</p>
+        </div>
+      </div>
+      <div class="featured-item">
+        <div class="featured-icon">
+          <img src="https://cdn-icons-png.freepik.com/256/5637/5637272.png?ga=GA1.1.87438823.1711523060&semt=ais_hybrid" alt="Online Support">
+        </div>
+        <div class="featured-text">
+          <h4>Online Support 24/7</h4>
+          <p>Support online 24 hours a day</p>
+        </div>
+      </div>
+      <div class="featured-item">
+        <div class="featured-icon">
+          <img src="https://cdn-icons-png.freepik.com/256/11094/11094246.png?ga=GA1.1.87438823.1711523060&semt=ais_hybrid" alt="Secure Payment">
+        </div>
+        <div class="featured-text">
+          <h4>Secure Payment</h4>
+          <p>All cards accepted</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="featured-item">
+        <div class="featured-icon">
+          <img src="https://cdn-icons-png.freepik.com/256/11865/11865035.png?ga=GA1.1.87438823.1711523060&semt=ais_hybrid" alt="Easy Returns">
+        </div>
+        <div class="featured-text">
+          <h4>Easy Returns</h4>
+          <p>Hassle-free returns within 30 days</p>
+        </div>
+      </div>
+      <div class="featured-item">
+        <div class="featured-icon">
+          <img src="https://cdn-icons-png.freepik.com/256/1534/1534216.png?ga=GA1.1.87438823.1711523060&semt=ais_hybrid" alt="Quality Assurance">
+        </div>
+        <div class="featured-text">
+          <h4>Quality Assurance</h4>
+          <p>Top quality products guaranteed</p>
+        </div>
+      </div>
+      <div class="featured-item">
+        <div class="featured-icon">
+          <img src="https://cdn-icons-png.freepik.com/256/12565/12565408.png?ga=GA1.1.87438823.1711523060&semt=ais_hybrid" alt="Exclusive Offers">
+        </div>
+        <div class="featured-text">
+          <h4>Exclusive Offers</h4>
+          <p>Special deals and discounts</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 style="text-align: center;">Our Products</h2>
+  <div class="product-grid">
+    <div *ngFor="let product of featuredProducts" class="product-card">
+      <img [src]="product.image" alt="{{ product.name }}" class="product-image">
+      <div class="product-info">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description}}</p>
+        <div class="rating">
+          <ng-container *ngFor="let star of getStars(product.rating)">
+            <i class="fa" [ngClass]="star ? 'fas fa-star' : 'far fa-star'" aria-hidden="true"></i>
+          </ng-container>
+        </div>
+        
+        <a [routerLink]="['/product-details', product.id]" class="details-link">View Details</a>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-column">
+        <div class="footer-brand">
+          <a routerLink="/" routerLinkActive="active">
+            <img src="https://img.icons8.com/?size=80&id=LhRbsuC35iCh&format=png" alt="Logo" class="logo-image">
+            <span style="font-size: 1.50em;"><b>Shopify</b></span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <ul class="footer-list">
+          <b>Explore Us</b>
+          <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+          <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
+          <li><a routerLink="/cart" routerLinkActive="active">Cart</a></li>
+          <li><a routerLink="/order-history" routerLinkActive="active">Order History</a></li>
+        </ul>
+      </div>
+     
+      <div class="footer-column">
+        <ul class="footer-list">
+          <b>Contact Us</b>
+          <li><a>Ph no : +91 8675453756</a></li>
+          <li><a>Email : shopify&#64;email.com</a></li>
+        </ul>
+      </div>
+      <hr>
+    </div>
+    <div class="footer-bottom">
+      <hr style=" border: none;
+      height: 1px; 
+      background-color: #9c9998; 
+      margin: 20px 0;">
+      <p>&copy; 2024 | Shopify. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  

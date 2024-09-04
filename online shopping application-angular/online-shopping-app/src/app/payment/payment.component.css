@@ -1,0 +1,65 @@
+.payment-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .payment-methods {
+    width: 60%;
+  }
+  
+  .payment-offer {
+    background-color: #ffe4e1;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-category {
+    margin-bottom: 20px;
+  }
+  
+  .payment-category h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .payment-option input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .payment-option label {
+    flex-grow: 1;
+  }
+  
+  .offers {
+    color: green;
+    font-size: 0.9em;
+  }
+  
+  .price-details {
+    width: 35%;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .price-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .place-order-button {
+    background-color: #800080;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  

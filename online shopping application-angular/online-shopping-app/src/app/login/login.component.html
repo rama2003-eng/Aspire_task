@@ -1,0 +1,71 @@
+<!-- <div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="login()">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        [(ngModel)]="email"
+        name="email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        [(ngModel)]="password"
+        name="password"
+        required
+      />
+    </div>
+    <button type="submit">Login</button>
+  </form>
+ <P style="text-align: center;"> Create  Account ,  <a [routerLink]= "['/signup']"class="details-link">Signup</a></P>
+</div> -->
+<div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="login()" #loginForm="ngForm" novalidate>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        [(ngModel)]="email"
+        name="email"
+        required
+        email
+        #emailField="ngModel"
+      />
+      <div *ngIf="emailField.errors && emailField.touched" class="error-message">
+        <div *ngIf="emailField.errors['required']">Email is required.</div>
+        <div *ngIf="emailField.errors['email']">Email must be valid.</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        [(ngModel)]="password"
+        name="password"
+        required
+        minlength="6"
+        #passwordField="ngModel"
+      />
+      <div *ngIf="passwordField.errors && passwordField.touched" class="error-message">
+        <div *ngIf="passwordField.errors['required']">Password is required.</div>
+        <div *ngIf="passwordField.errors['minlength']">Password must be at least 6 characters long.</div>
+      </div>
+    </div>
+    <button type="submit" >Login</button>
+  </form>
+  <p style="text-align: center;">
+    Create Account,
+    <a [routerLink]="['/signup']" class="details-link">Signup</a>
+  </p>
+  <div *ngIf="loginFailed" class="error-message">Invalid email or password.</div>
+  <div *ngIf="loginSuccess" class="success-message">Login successful! Redirecting...</div>
+</div>
